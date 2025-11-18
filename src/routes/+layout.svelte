@@ -4,6 +4,7 @@
 	import Navbar from '../components/Navbar.svelte';
 	import Footer from '../components/Footer.svelte';
 	import Blottartuban from '../components/Blottartuban.svelte';
+	import Cursor from '../components/Cursor.svelte';
 
 	let { children } = $props();
 </script>
@@ -18,3 +19,4 @@
 </div>
 <Footer />
 <Blottartuban />
+<Cursor />
