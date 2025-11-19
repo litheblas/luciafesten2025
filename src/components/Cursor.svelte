@@ -22,6 +22,17 @@
 		type = 'default';
 	}
 
+	async function handleTouch(evt: TouchEvent) {
+		x = evt.changedTouches[0].clientX;
+		y = evt.changedTouches[0].clientY;
+		show = true;
+		type = 'active';
+		await wait(220);
+		type = 'default';
+		await wait(220);
+		show = false;
+	}
+
 	function handleMouseOver() {
 		show = true;
 	}
@@ -35,12 +46,14 @@
 		window.addEventListener('mouseover', handleMouseOver);
 		window.addEventListener('mouseout', handleMouseOut);
 		window.addEventListener('click', handleClick);
+		window.addEventListener('touchend', handleTouch);
 
 		return () => {
 			window.removeEventListener('mousemove', handleMouseMove);
 			window.removeEventListener('mouseover', handleMouseOver);
 			window.removeEventListener('mouseout', handleMouseOut);
-			window.addEventListener('click', handleClick);
+			window.removeEventListener('click', handleClick);
+			window.removeEventListener('touchend', handleTouch);
 		};
 	});
 </script>

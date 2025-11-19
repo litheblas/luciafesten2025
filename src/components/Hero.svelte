@@ -82,7 +82,7 @@
 			maxAngleSpd: Math.PI - Math.random() * 2 * Math.PI,
 			spd: 0,
 			angleSpd: 0,
-			size: 80 + Math.random() * 120
+			size: 80 + Math.random() * 100
 		};
 		it.spd = it.maxSpd;
 		it.angleSpd = it.maxAngleSpd;
@@ -172,15 +172,13 @@
 			console.log('using pointer parallax');
 			window.addEventListener('mousemove', handleMouseParallax);
 		} else {
+			window.addEventListener('scroll', handleScrollParallax);
 			navigator.permissions.query({ name: 'gyroscope' as PermissionName }).then((result) => {
 				if (result.state === 'granted') {
 					console.log('using gyro parallax');
 					const gyro = new (window as any).Gyroscope({ frequency: 60 });
 					gyro.addEventListener('reading', () => handleGyroParallax(gyro));
 					gyro.start();
-				} else {
-					console.log('using scroll parallax');
-					window.addEventListener('scroll', handleScrollParallax);
 				}
 			});
 		}
