@@ -1,8 +1,5 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
-	import CenterText from './CenterText.svelte';
-
-	const ITEM_SIZE = 100;
 
 	const ITEMS: string[] = [
 		'/item_1.png',
@@ -70,7 +67,7 @@
 
 	function handleCreateItem() {
 		if (canvas == null || imageParent == null) return;
-		if (items.length > 10) {
+		if (items.length > 5) {
 			items.pop();
 		}
 
@@ -91,7 +88,8 @@
 		it.angleSpd = it.maxAngleSpd;
 
 		items.unshift(it);
-		setTimeout(handleCreateItem, 3000 + Math.random() * 5000);
+		console.log('Adding item', items);
+		setTimeout(handleCreateItem, 4000 + Math.random() * 5000);
 	}
 
 	function handleClickCanvas(evt: MouseEvent) {
@@ -111,6 +109,7 @@
 		let dt = (Date.now() - lastTime) / 1000;
 
 		if (canvas != null && ctx != null) {
+			ctx.clearRect(0, 0, canvas.width, canvas.height);
 			for (let i = 0; i < items.length; i++) {
 				const it = items[i];
 				it.x += Math.cos(it.dir) * it.spd * dt;
@@ -134,7 +133,6 @@
 					it.y = Math.max(it.size / 2, Math.min(canvas.height - it.size / 2, it.y));
 				}
 
-				ctx.clearRect(0, 0, canvas.width, canvas.height);
 				ctx.translate(it.x, it.y);
 				ctx.rotate(it.angle);
 				ctx.drawImage(
