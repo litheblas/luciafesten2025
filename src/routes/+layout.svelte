@@ -14,9 +14,7 @@
 </svelte:head>
 
 <Navbar />
-<div class="container mx-auto">
-	{@render children()}
-</div>
+{@render children()}
 <Footer />
 <Blottartuban />
 <Cursor />

@@ -30,7 +30,7 @@
 <div
 	onpointerover={handlePointerOver}
 	onpointerout={handlePointerOut}
-	class="fixed right-0 bottom-0 w-72 translate-1/2 cursor-pointer"
+	class="fixed right-0 bottom-0 hidden w-72 translate-1/2 cursor-pointer lg:block"
 >
 	<a
 		class="block -rotate-45 transition {hovered && '-translate-1/5'}"
