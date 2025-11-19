@@ -102,7 +102,7 @@
 				const baseDir = Math.atan2(it.y - evt.pageY, it.x - evt.pageX);
 				it.dir = baseDir + (Math.PI / 4) * Math.random();
 				it.spd = 300 - 100 * Math.random();
-				it.angleSpd = 2 * Math.PI - 4 * Math.random();
+				it.angleSpd = (2 - 4 * Math.random()) * Math.PI;
 			}
 		}
 	}
