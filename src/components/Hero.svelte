@@ -218,10 +218,10 @@
 		bind:this={canvas}
 	></canvas>
 	<h1
-		class="absolute top-1/2 left-1/2 z-0 font-display text-[calc(1rem+8vw)] font-bold text-orange-400 drop-shadow-2xl"
+		class="absolute top-1/2 left-1/2 z-0 text-center font-display text-[calc(1rem+8vw)]/[1] drop-shadow-2xl"
 	>
 		{#each { length: 40 } as _, i}
-			<span
+			<div
 				aria-hidden={i !== 0}
 				class="absolute"
 				style="
@@ -230,8 +230,9 @@
 					z-index: {40 - i};
 				"
 			>
-				LUCIAFESTEN
-			</span>
+				<span class="text-[1em] font-semibold text-orange-400">LUCIAFESTEN</span>
+				<span class="text-[0.9em] font-medium text-amber-600 lg:text-[0.7em]">IN SPACE</span>
+			</div>
 		{/each}
 	</h1>
 </div>
