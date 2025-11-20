@@ -168,11 +168,11 @@
 			handleCreateItem();
 		}
 
-		window.addEventListener('scroll', handleScrollParallax);
 		if (matchMedia('(pointer:fine)').matches) {
 			console.log('using pointer parallax');
 			window.addEventListener('mousemove', handleMouseParallax);
 		} else {
+			window.addEventListener('scroll', handleScrollParallax);
 			navigator.permissions.query({ name: 'gyroscope' as PermissionName }).then((result) => {
 				if (result.state === 'granted') {
 					console.log('using gyro parallax');
