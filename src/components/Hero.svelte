@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
+	import Button from './Button.svelte';
 
 	const ITEMS: string[] = [
 		'/item_1.png',
@@ -173,14 +174,16 @@
 			window.addEventListener('mousemove', handleMouseParallax);
 		} else {
 			window.addEventListener('scroll', handleScrollParallax);
-			navigator.permissions.query({ name: 'gyroscope' as PermissionName }).then((result) => {
-				if (result.state === 'granted') {
-					console.log('using gyro parallax');
-					const gyro = new (window as any).Gyroscope({ frequency: 60 });
-					gyro.addEventListener('reading', () => handleGyroParallax(gyro));
-					gyro.start();
-				}
-			});
+			if (typeof (window as any).Gyroscope !== 'undefined') {
+				navigator.permissions.query({ name: 'gyroscope' as PermissionName }).then((result) => {
+					if (result.state === 'granted') {
+						console.log('using gyro parallax');
+						const gyro = new (window as any).Gyroscope({ frequency: 60 });
+						gyro.addEventListener('reading', () => handleGyroParallax(gyro));
+						gyro.start();
+					}
+				});
+			}
 		}
 		window.addEventListener('resize', handleResize);
 		window.requestAnimationFrame(handleItemsUpdate);
@@ -217,27 +220,50 @@
 		style="transform: translate(var(--u)*5, var(--v)*5)"
 		bind:this={canvas}
 	></canvas>
-	<h1
-		class="absolute top-1/2 left-1/2 z-0 text-center font-display text-[calc(1rem+8vw)]/[1] drop-shadow-2xl"
+	<div
+		class="absolute top-[50vh] left-1/2 z-0 -translate-1/2 text-center font-display drop-shadow-2xl"
 	>
-		{#each { length: 40 } as _, i}
-			<div
-				aria-hidden={i !== 0}
-				class="pointer-events-none absolute {i !== 0 && 'select-none'}"
-				style="
-				    transform: translate(-50%, calc(0.1*{i}vw - 50%)) scale({1 - i / 400});
-					filter: brightness({i !== 0 ? 0.9 - i / 60 : 1}) contrast({1 + i / 80});
-					z-index: {40 - i};
-				"
+		<h1 class="text-[calc(1rem+8vw)]/[1]">
+			<p class="pointer-events-none relative text-[1em] font-semibold text-orange-400">
+				<span class="pointer-events-auto">LUCIAFESTEN</span>
+				{#each { length: 40 } as _, i}
+					<span
+						aria-hidden={i !== 0}
+						class="pointer-events-none absolute inset-0 select-none"
+						style="
+        				    transform: translateY(calc(0.1*{i}vw)) scale({1 - i / 400});
+           					filter: brightness({i !== 0 ? 0.9 - i / 60 : 1}) contrast({1 + i / 80});
+           					z-index: {-i};
+        				"
+					>
+						LUCIAFESTEN
+					</span>
+				{/each}
+			</p>
+			<p
+				class="pointer-events-none relative text-[0.9em] font-medium text-amber-600 lg:text-[0.7em]"
 			>
-				<span class="pointer-events-auto text-[1em] font-semibold text-orange-400">
-					LUCIAFESTEN
-				</span>
-				<span class="pointer-events-auto text-[0.9em] font-medium text-amber-600 lg:text-[0.7em]">
-					IN SPACE
-				</span>
+				<span class="pointer-events-auto">IN SPACE</span>
+				{#each { length: 40 } as _, i}
+					<span
+						aria-hidden={i !== 0}
+						class="absolute inset-0 select-none"
+						style="
+        				    transform: translateY(calc(0.1*{i}vw)) scale({1 - i / 400});
+           					filter: brightness({i !== 0 ? 0.9 - i / 60 : 1}) contrast({1 + i / 80});
+           					z-index: {-i};
+        				"
+					>
+						IN SPACE
+					</span>
+				{/each}
+			</p>
+
+			<div class="pointer-events-none mt-20 flex items-center justify-center gap-3">
+				<Button class="pointer-events-auto" icon="bxl:facebook">Dela på Facebook</Button>
+				<Button class="pointer-events-auto" icon="bxs:rocket">Biljetter</Button>
 			</div>
-		{/each}
-	</h1>
+		</h1>
+	</div>
 </div>
 <div class="h-[20vh] w-full bg-linear-180 from-black to-black/0"></div>

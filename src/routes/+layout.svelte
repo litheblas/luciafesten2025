@@ -1,4 +1,5 @@
 <script lang="ts">
+	import 'iconify-icon';
 	import '../app.css';
 	import favicon from '$lib/assets/favicon.svg';
 	import Navbar from '../components/Navbar.svelte';
