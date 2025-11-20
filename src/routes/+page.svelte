@@ -40,7 +40,7 @@
 		{
 			title: 'Kul Små Grejer™',
 			description:
-				'På hemliga platser i Kårallens dunkel hittar du roliga upplevelser som vårat manickdepartement Kul Små Grejer™ knopat ihop.',
+				'På hemliga platser i Kårallens dunkel hittar du roliga upplevelser som vårt manickdepartement Kul Små Grejer™ knopat ihop.',
 			image: '/ksg.jpg'
 		}
 	]}
