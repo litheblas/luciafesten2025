@@ -218,32 +218,22 @@
 		bind:this={canvas}
 	></canvas>
 	<h1
-		class="pointer-events-none absolute top-1/2 left-1/2 z-0 text-center font-display text-[calc(1rem+8vw)]/[1] drop-shadow-2xl"
+		class="absolute top-1/2 left-1/2 z-0 text-center font-display text-[calc(1rem+8vw)]/[1] drop-shadow-2xl"
 	>
 		{#each { length: 40 } as _, i}
 			<div
 				aria-hidden={i !== 0}
-				class="absolute"
+				class="pointer-events-none absolute {i !== 0 && 'select-none'}"
 				style="
 				    transform: translate(-50%, calc(0.1*{i}vw - 50%)) scale({1 - i / 400});
 					filter: brightness({i !== 0 ? 0.9 - i / 60 : 1}) contrast({1 + i / 80});
 					z-index: {40 - i};
 				"
 			>
-				<span
-					class="
-				        {i === 0 && 'pointer-events-auto'}
-						text-[1em] font-semibold text-orange-400
-					"
-				>
+				<span class="pointer-events-auto text-[1em] font-semibold text-orange-400">
 					LUCIAFESTEN
 				</span>
-				<span
-					class="
-    				    {i === 0 && 'pointer-events-auto'}
-       					text-[0.9em] font-medium text-amber-600 lg:text-[0.7em]
-					"
-				>
+				<span class="pointer-events-auto text-[0.9em] font-medium text-amber-600 lg:text-[0.7em]">
 					IN SPACE
 				</span>
 			</div>
