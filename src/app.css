@@ -4,11 +4,21 @@
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
-body {
-	min-height: 100vh;
+@font-face {
+	font-family: 'Canterbury';
+	src:
+		local(''),
+		url('/Canterbury.ttf') format('truetype');
 }
 
 @theme {
 	--font-display: 'Jost', 'sans-serif';
 	--font-comic: 'Gloria Hallelujah', 'Comic Sans MS', 'sans-serif';
+	--font-logo: 'Canterbury', serif;
+}
+
+body {
+	min-height: 100vh;
+	background-color: var(--color-slate-950);
+	color: var(--color-slate-50);
 }
