@@ -41,7 +41,7 @@
 
 	<div
 		class="
-    		absolute -top-4/5 -left-7/10 flex h-50 w-60 items-center bg-[url(/speechbubble.gif)] bg-contain bg-no-repeat p-4 pr-16 opacity-0 transition-all duration-300
+    		absolute -top-4/5 -left-7/10 flex h-50 w-60 items-center bg-[url(/speechbubble.gif)] bg-contain bg-no-repeat p-4 pr-16 pb-7 opacity-0 transition-all duration-300
     		{hovered ? 'translate-0 scale-100 rotate-0 opacity-100' : 'translate-20 scale-75 rotate-15'}
         "
 	>
