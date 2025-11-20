@@ -2,7 +2,7 @@
 	import { wait } from '$lib';
 	import { render } from 'svelte/server';
 
-	const messages = [''];
+	const messages = ['Lorem ipsum dolor sit amet!'];
 
 	let hovered = $state(false);
 	let talking = $state(false);
@@ -41,10 +41,10 @@
 
 	<div
 		class="
-    		absolute -top-4/5 -left-9/10 flex h-50 w-60 items-center bg-[url(/speechbubble.svg)] bg-contain bg-no-repeat p-4 opacity-0 transition-all duration-300
+    		absolute -top-4/5 -left-7/10 flex h-50 w-60 items-center bg-[url(/speechbubble.gif)] bg-contain bg-no-repeat p-4 pr-16 opacity-0 transition-all duration-300
     		{hovered ? 'translate-0 scale-100 rotate-0 opacity-100' : 'translate-20 scale-75 rotate-15'}
         "
 	>
-		<p class="mb-4 w-full text-center text-lg">{message}</p>
+		<p class="w-full text-center font-comic text-xl">{message}</p>
 	</div>
 </div>

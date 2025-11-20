@@ -1,7 +1,14 @@
+@import '@fontsource-variable/jost/wght.css';
+@import '@fontsource/gloria-hallelujah/index.css';
 @import 'tailwindcss';
 @plugin '@tailwindcss/forms';
 @plugin '@tailwindcss/typography';
 
 body {
 	min-height: 100vh;
+}
+
+@theme {
+	--font-display: 'Jost', 'sans-serif';
+	--font-comic: 'Gloria Hallelujah', 'Comic Sans MS', 'sans-serif';
 }

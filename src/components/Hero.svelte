@@ -168,11 +168,11 @@
 			handleCreateItem();
 		}
 
+		window.addEventListener('scroll', handleScrollParallax);
 		if (matchMedia('(pointer:fine)').matches) {
 			console.log('using pointer parallax');
 			window.addEventListener('mousemove', handleMouseParallax);
 		} else {
-			window.addEventListener('scroll', handleScrollParallax);
 			navigator.permissions.query({ name: 'gyroscope' as PermissionName }).then((result) => {
 				if (result.state === 'granted') {
 					console.log('using gyro parallax');
@@ -217,4 +217,21 @@
 		style="transform: translate(var(--u)*5, var(--v)*5)"
 		bind:this={canvas}
 	></canvas>
+	<h1
+		class="absolute top-1/2 left-1/2 z-0 font-display text-[calc(1rem+8vw)] font-bold text-orange-400 drop-shadow-2xl"
+	>
+		{#each { length: 40 } as _, i}
+			<span
+				aria-hidden={i !== 0}
+				class="absolute"
+				style="
+				    transform: translate(-50%, calc(0.1*{i}vw - 50%)) scale({1 - i / 400});
+					filter: brightness({i !== 0 ? 0.9 - i / 60 : 1}) contrast({1 + i / 80});
+					z-index: {40 - i};
+				"
+			>
+				LUCIAFESTEN
+			</span>
+		{/each}
+	</h1>
 </div>
