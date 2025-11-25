@@ -13,8 +13,8 @@
 }
 
 @theme {
-	--font-display: 'Jost', 'sans-serif';
-	--font-sans: 'Work Sans', 'sans-serif';
+	--font-display: 'Jost Variable', 'sans-serif';
+	--font-sans: 'Work Sans Variable', 'sans-serif';
 	--font-comic: 'Gloria Hallelujah', 'Comic Sans MS', 'sans-serif';
 	--font-logo: 'Canterbury', 'serif';
 }
