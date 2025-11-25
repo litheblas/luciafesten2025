@@ -1,19 +1,26 @@
 <script>
+	import Button from '../components/Button.svelte';
 	import Cards from '../components/Cards.svelte';
 	import CenterText from '../components/CenterText.svelte';
 	import Hero from '../components/Hero.svelte';
+	import LiTHeBlas from '../components/LiTHeBlas.svelte';
+	import Tree from '../components/Tree.svelte';
 </script>
 
-<Hero />
+{#snippet heroButtons()}
+	<Button class="pointer-events-auto" icon="bxl:facebook">Dela på Facebook</Button>
+	<Button class="pointer-events-auto" icon="bxs:rocket">Biljetter</Button>
+{/snippet}
+
+<Hero buttons={heroButtons} />
 <CenterText>
-	<p>En lite annorlunda fest är tillbaka i jul igen,</p>
 	<p>
-		<span class="font-logo text-[#e8e868]">LiTHe Blås</span> fyller Kårallen med liveband, karaoke och
-		Kul Små Grejer™!
+		I rymden kan ingen höra dig spela… En lite annorlunda fest är tillbaka i jul igen,
+		<LiTHeBlas /> fyller Kårallen med liveband, karaoke och Kul Små Grejer™!
 	</p>
 </CenterText>
 
-<img class="mx-auto w-lg" src="/shooting-star.gif" alt="" />
+<img class="mx-auto w-full max-w-lg" src="/shooting-star.gif" alt="" />
 
 <Cards
 	cards={[
@@ -36,3 +43,5 @@
 		}
 	]}
 />
+
+<Tree />
