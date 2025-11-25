@@ -1,6 +1,12 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import { onMount, type Snippet } from 'svelte';
 	import Button from './Button.svelte';
+
+	type HeroProps = {
+		buttons?: Snippet;
+	};
+
+	const { buttons }: HeroProps = $props();
 
 	const ITEMS: string[] = [
 		'/item_1.png',
@@ -195,6 +201,23 @@
 	});
 </script>
 
+{#snippet layeredText(text: string, layers: number = 20)}
+	<span class="pointer-events-auto">{text}</span>
+	{#each { length: 40 } as _, i}
+		<span
+			aria-hidden={i !== 0}
+			class="pointer-events-none absolute inset-0 select-none"
+			style="
+		    transform: translateY(calc(0.1*{i}vw)) scale({1 - i / 400});
+			filter: brightness({i !== 0 ? 0.9 - i / 60 : 1}) contrast({1 + i / 80});
+			z-index: {-i};
+		"
+		>
+			{text}
+		</span>
+	{/each}
+{/snippet}
+
 <div bind:this={imageParent} class="hidden">
 	{#each ITEMS as src}
 		<img {src} alt="" />
@@ -221,47 +244,20 @@
 		bind:this={canvas}
 	></canvas>
 	<div
-		class="absolute top-[50vh] left-1/2 z-0 -translate-1/2 text-center font-display drop-shadow-2xl"
+		class="pointer-events-none absolute top-[50vh] left-1/2 z-0 -translate-1/2 text-center font-display drop-shadow-2xl"
 	>
 		<h1 class="text-[calc(1rem+8vw)]/[1]">
-			<p class="pointer-events-none relative text-[1em] font-semibold text-orange-400">
-				<span class="pointer-events-auto">LUCIAFESTEN</span>
-				{#each { length: 40 } as _, i}
-					<span
-						aria-hidden={i !== 0}
-						class="pointer-events-none absolute inset-0 select-none"
-						style="
-        				    transform: translateY(calc(0.1*{i}vw)) scale({1 - i / 400});
-           					filter: brightness({i !== 0 ? 0.9 - i / 60 : 1}) contrast({1 + i / 80});
-           					z-index: {-i};
-        				"
-					>
-						LUCIAFESTEN
-					</span>
-				{/each}
+			<p class="relative text-[1em] font-semibold text-orange-400">
+				{@render layeredText('LUCIAFESTEN', 20)}
 			</p>
-			<p
-				class="pointer-events-none relative text-[0.9em] font-medium text-amber-600 lg:text-[0.7em]"
-			>
-				<span class="pointer-events-auto">IN SPACE</span>
-				{#each { length: 40 } as _, i}
-					<span
-						aria-hidden={i !== 0}
-						class="absolute inset-0 select-none"
-						style="
-        				    transform: translateY(calc(0.1*{i}vw)) scale({1 - i / 400});
-           					filter: brightness({i !== 0 ? 0.9 - i / 60 : 1}) contrast({1 + i / 80});
-           					z-index: {-i};
-        				"
-					>
-						IN SPACE
-					</span>
-				{/each}
+			<p class="relative text-[0.9em] font-medium text-amber-600 lg:text-[0.7em]">
+				{@render layeredText('IN SPACE', 20)}
 			</p>
 
-			<div class="pointer-events-none mt-20 flex items-center justify-center gap-3">
-				<Button class="pointer-events-auto" icon="bxl:facebook">Dela på Facebook</Button>
-				<Button class="pointer-events-auto" icon="bxs:rocket">Biljetter</Button>
+			<div class="mt-20 flex items-center justify-center">
+				<div class="pointer-events-auto flex items-center justify-center gap-3">
+					{@render buttons?.()}
+				</div>
 			</div>
 		</h1>
 	</div>
