@@ -2,7 +2,9 @@
 	import Button from '../components/Button.svelte';
 	import Cards from '../components/Cards.svelte';
 	import CenterText from '../components/CenterText.svelte';
+	import Divider from '../components/Divider.svelte';
 	import Hero from '../components/Hero.svelte';
+	import ImageAndText from '../components/ImageAndText.svelte';
 	import LiTHeBlas from '../components/LiTHeBlas.svelte';
 	import Tree from '../components/Tree.svelte';
 </script>
@@ -45,3 +47,15 @@
 />
 
 <Tree />
+
+<ImageAndText src="/kladkod.jpg" alt="">
+	<h2 class="mb-2 font-display text-3xl font-semibold">Klädkod? Ja tack!</h2>
+	<p class="text-lg">Lämna Ovven hemma, på Luciafesten är det fint eller finurligt som gäller.</p>
+</ImageAndText>
+
+<Divider class="max-w-6xl" />
+
+<ImageAndText dir="rtl" src="/gran.gif" alt="">
+	<h2 class="mb-2 font-display text-3xl font-semibold">Men blir det något luciatåg?</h2>
+	<p class="text-lg">Självklart! <LiTHeBlas /> fixar universums prydligaste tåg.</p>
+</ImageAndText>

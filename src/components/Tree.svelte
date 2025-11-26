@@ -9,6 +9,4 @@
 		Är tänd och lyser som stjärnhimlen själv, som kaka på kaka kommer luciatåg och lorem ipsum dolor
 		sit amet
 	</p>
-
-	<div class="h-screen"></div>
 </div>
