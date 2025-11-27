@@ -35,6 +35,7 @@
 	<a
 		class="block -rotate-45 transition {hovered && '-translate-1/5'}"
 		href="https://litheblas.org/"
+		target="_blank"
 	>
 		<img src="/blottartuban.svg" alt="" />
 	</a>

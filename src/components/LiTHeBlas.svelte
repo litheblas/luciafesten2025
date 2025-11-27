@@ -1,1 +1,1 @@
-<span class="inline-block font-logo text-nowrap text-[#e8e868] hover:rotate-3">LiTHe Blås</span>
+<span class="inline-block font-logo text-[1.2em] text-nowrap text-[#e8e868]"> LiTHe Blås </span>

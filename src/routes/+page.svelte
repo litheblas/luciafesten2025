@@ -22,7 +22,7 @@
 	</p>
 </CenterText>
 
-<img class="mx-auto w-full max-w-lg" src="/shooting-star.gif" alt="" />
+<video class="mx-auto w-full max-w-lg" autoplay muted loop src="/star.webm" />
 
 <Cards
 	cards={[
@@ -48,6 +48,8 @@
 
 <Tree />
 
+<video class="mx-auto mb-20 w-full max-w-md" autoplay muted loop src="/rocketman.webm" />
+
 <ImageAndText src="/kladkod.jpg" alt="">
 	<h2 class="mb-2 font-display text-3xl font-semibold">Klädkod? Ja tack!</h2>
 	<p class="text-lg">Lämna Ovven hemma, på Luciafesten är det fint eller finurligt som gäller.</p>
@@ -55,7 +57,7 @@
 
 <Divider class="max-w-6xl" />
 
-<ImageAndText dir="rtl" src="/gran.gif" alt="">
-	<h2 class="mb-2 font-display text-3xl font-semibold">Men blir det något luciatåg?</h2>
+<ImageAndText dir="rtl" src="/luciatag.jpg" alt="">
+	<h2 class="mb-2 font-display text-3xl font-semibold">Men blir det något tåg på Lucia?</h2>
 	<p class="text-lg">Självklart! <LiTHeBlas /> fixar universums prydligaste tåg.</p>
 </ImageAndText>
