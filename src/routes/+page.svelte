@@ -61,3 +61,9 @@
 	<h2 class="mb-2 font-display text-3xl font-semibold">Men blir det något tåg på Lucia?</h2>
 	<p class="text-lg">Självklart! <LiTHeBlas /> fixar universums prydligaste tåg.</p>
 </ImageAndText>
+
+<img
+	src="/julslinga.webp"
+	class="mx-auto my-20 max-w-7xl mask-radial-[70%_70%] mask-radial-from-20% mask-radial-at-center"
+	alt=""
+/>
