@@ -63,7 +63,13 @@
 
 <Tree />
 
-<video class="mx-auto mb-20 w-full max-w-md px-6" autoplay muted loop src="/rocketman.webm" />
+<video
+	class="mx-auto mb-8 w-full max-w-md px-6 sm:mb-20"
+	autoplay
+	muted
+	loop
+	src="/rocketman.webm"
+/>
 
 <ImageAndText src="/kladkod.jpg" alt="">
 	<h2 class="mb-2 font-display text-3xl font-semibold">Klädkod? Ja tack!</h2>
