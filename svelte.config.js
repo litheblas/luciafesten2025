@@ -6,7 +6,10 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
-		adapter: adapter({})
+		adapter: adapter({
+			pages: './_site',
+			assets: './_site'
+		})
 	}
 };
 
