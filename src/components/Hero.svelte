@@ -9,28 +9,28 @@
 	const { buttons }: HeroProps = $props();
 
 	const ITEMS: string[] = [
-		'/item_1.webp',
-		'/item_2.webp',
-		'/item_3.webp',
-		'/item_4.webp',
-		'/item_5.webp',
-		'/item_6.webp',
-		'/item_7.webp',
-		'/item_8.webp',
-		'/item_9.webp',
-		'/item_10.webp',
-		'/item_11.webp',
-		'/item_12.webp',
-		'/item_13.webp',
-		'/item_14.webp'
+		'./item_1.webp',
+		'./item_2.webp',
+		'./item_3.webp',
+		'./item_4.webp',
+		'./item_5.webp',
+		'./item_6.webp',
+		'./item_7.webp',
+		'./item_8.webp',
+		'./item_9.webp',
+		'./item_10.webp',
+		'./item_11.webp',
+		'./item_12.webp',
+		'./item_13.webp',
+		'./item_14.webp'
 	];
 
 	const LAYERS = [
-		'/background_1.webp',
-		'/background_2.webp',
-		'/background_3.webp',
-		'/background_5.webp',
-		'/background_4.webp'
+		'./background_1.webp',
+		'./background_2.webp',
+		'./background_3.webp',
+		'./background_5.webp',
+		'./background_4.webp'
 	];
 
 	type FloatingItem = {

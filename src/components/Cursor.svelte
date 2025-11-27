@@ -65,7 +65,7 @@
 		{type === 'active' ? 'w-16' : 'w-12'}
 	"
 	style="left: {x}px; top: {y}px"
-	src="/cursor_{type}.gif"
+	src="./cursor_{type}.gif"
 	alt=""
 />
 
