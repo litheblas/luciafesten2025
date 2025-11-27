@@ -42,10 +42,11 @@
 
 	<div
 		class="
-    		absolute -top-4/5 -left-8/10 flex h-60 w-70 items-center bg-[url(speechbubble.gif)] bg-contain bg-no-repeat p-4 pr-16 pb-4 opacity-0 transition-all duration-300
+    		absolute -top-4/5 -left-8/10 flex h-50 w-60 items-center bg-contain bg-no-repeat p-6 pt-12 opacity-0 transition-all duration-300
     		{hovered ? 'translate-0 scale-100 rotate-0 opacity-100' : 'translate-20 scale-75 rotate-15'}
         "
 	>
 		<p class="w-full text-center font-comic text-lg">{message}</p>
+		<img src="speechbubble.gif" alt="" class="absolute inset-0 -z-10" />
 	</div>
 </div>
