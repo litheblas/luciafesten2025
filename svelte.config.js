@@ -6,6 +6,9 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
+		paths: {
+			base: '/luciafesten2025'
+		},
 		adapter: adapter({
 			pages: './_site',
 			assets: './_site'
