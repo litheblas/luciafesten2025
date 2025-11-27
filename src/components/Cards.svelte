@@ -12,9 +12,9 @@
 	const { cards }: CardsProps = $props();
 </script>
 
-<div class="container mx-auto flex flex-wrap items-end justify-center py-12">
+<div class="container mx-auto flex flex-wrap items-end justify-center px-6 py-12">
 	{#each cards as card}
-		<div class="h-full w-full md:w-1/2 md:p-3 xl:w-1/3">
+		<div class="h-full w-full py-6 md:w-1/2 md:p-3 xl:w-1/3">
 			<div class="flex w-full flex-col rounded-lg">
 				<div class="justify-self-end py-3">
 					<h3 class="font-display text-lg font-medium">{card.title}</h3>

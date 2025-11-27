@@ -10,8 +10,23 @@
 </script>
 
 {#snippet heroButtons()}
-	<Button class="pointer-events-auto" icon="bxl:facebook">Dela på Facebook</Button>
-	<Button class="pointer-events-auto" icon="bxs:rocket">Biljetter</Button>
+	<Button
+		href="https://fb.me/e/3KcG9aF2U"
+		target="_blank"
+		class="pointer-events-auto w-full sm:w-max"
+		icon="bxl:facebook"
+	>
+		Dela på Facebook
+	</Button>
+
+	<Button
+		href="https://go.orbiapp.io/BE2nvOg6mYb"
+		target="_blank"
+		class="pointer-events-auto w-full sm:w-max"
+		icon="bxs:rocket"
+	>
+		Biljetter
+	</Button>
 {/snippet}
 
 <Hero buttons={heroButtons} />
@@ -22,7 +37,7 @@
 	</p>
 </CenterText>
 
-<video class="mx-auto w-full max-w-lg" autoplay muted loop src="/star.webm" />
+<video class="mx-auto w-full max-w-lg px-6" autoplay muted loop src="/star.webm" />
 
 <Cards
 	cards={[
@@ -48,7 +63,7 @@
 
 <Tree />
 
-<video class="mx-auto mb-20 w-full max-w-md" autoplay muted loop src="/rocketman.webm" />
+<video class="mx-auto mb-20 w-full max-w-md px-6" autoplay muted loop src="/rocketman.webm" />
 
 <ImageAndText src="/kladkod.jpg" alt="">
 	<h2 class="mb-2 font-display text-3xl font-semibold">Klädkod? Ja tack!</h2>
@@ -64,6 +79,6 @@
 
 <img
 	src="/julslinga.webp"
-	class="mx-auto my-20 max-w-7xl mask-radial-[70%_70%] mask-radial-from-20% mask-radial-at-center"
+	class="mx-auto w-full max-w-7xl mask-radial-[70%_70%] mask-radial-from-20% mask-radial-at-center px-6 md:my-20"
 	alt=""
 />

@@ -255,7 +255,9 @@
 			</p>
 
 			<div class="mt-20 flex items-center justify-center">
-				<div class="pointer-events-auto flex items-center justify-center gap-3">
+				<div
+					class="pointer-events-auto flex w-full flex-col justify-center gap-3 sm:w-max sm:flex-row"
+				>
 					{@render buttons?.()}
 				</div>
 			</div>
