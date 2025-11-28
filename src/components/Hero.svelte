@@ -224,7 +224,7 @@
 	{/each}
 </div>
 
-<div class="relative h-[80vh] w-full" style="--u: {u}px; --v: {v}px">
+<div class="relative h-[calc(100vh-6rem)] w-full" style="--u: {u}px; --v: {v}px">
 	<div class="-z-10 h-full w-full bg-black">
 		{#each LAYERS as img, i}
 			<div
@@ -263,5 +263,7 @@
 			</div>
 		</h1>
 	</div>
+	<div
+		class="absolute bottom-0 h-[calc(20vh)] w-full bg-linear-180 from-slate-950/0 to-slate-950"
+	></div>
 </div>
-<div class="h-[20vh] w-full bg-linear-180 from-black to-black/0"></div>
