@@ -5,7 +5,8 @@
 		>
 			GRANEN
 		</h1>
-		<video src="gran.webm" class="-mt-[4vw] w-full pb-20 sm:w-3/4 sm:pb-[8vw]"></video>
+		<!-- <video src="gran.webm" autoplay muted loop class="-mt-[4vw] w-full pb-20 sm:w-3/4 sm:pb-[8vw]"></video> -->
+		<img src="gran.webp" class="-mt-[4vw] w-full pb-20 sm:w-3/4 sm:pb-[8vw]" alt="" />
 	</div>
 	<p class="mx-auto max-w-xl text-center font-display text-2xl">
 		Är tänd och lyser som stjärnhimlen själv, som kaka på kaka kommer luciatåg och lorem ipsum dolor
