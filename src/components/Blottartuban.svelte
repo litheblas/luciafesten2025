@@ -2,7 +2,10 @@
 	import { wait } from '$lib';
 	import { render } from 'svelte/server';
 
-	const messages = ['Att se en spelning med LiTHe Blås är som att få en käftsmäll'];
+	const messages = [
+		'Att se en spelning med LiTHe Blås är som att få en käftsmäll',
+		'Vissste duatt LiTHe Blås speller hellre än bra?'
+	];
 
 	let talking = $state(false);
 	let message = $state('');
