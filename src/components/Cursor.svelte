@@ -1,10 +1,15 @@
+<script lang="ts" module>
+	export const cursorTypes = ['default', 'active'] as const;
+	export type CursorType = (typeof cursorTypes)[number];
+</script>
+
 <script lang="ts">
 	import { wait } from '$lib';
 	import { onMount } from 'svelte';
 
 	let x = $state(-999);
 	let y = $state(-999);
-	let type = $state('default');
+	let type: CursorType = $state('default');
 	let show = $state(true);
 
 	$effect(() => {
@@ -22,17 +27,6 @@
 		type = 'default';
 	}
 
-	async function handleTouch(evt: TouchEvent) {
-		x = evt.changedTouches[0].clientX;
-		y = evt.changedTouches[0].clientY;
-		show = true;
-		type = 'active';
-		await wait(220);
-		type = 'default';
-		await wait(220);
-		show = false;
-	}
-
 	function handleMouseOver() {
 		show = true;
 	}
@@ -46,14 +40,12 @@
 		window.addEventListener('mouseover', handleMouseOver);
 		window.addEventListener('mouseout', handleMouseOut);
 		window.addEventListener('click', handleClick);
-		window.addEventListener('touchend', handleTouch);
 
 		return () => {
 			window.removeEventListener('mousemove', handleMouseMove);
 			window.removeEventListener('mouseover', handleMouseOver);
 			window.removeEventListener('mouseout', handleMouseOut);
 			window.removeEventListener('click', handleClick);
-			window.removeEventListener('touchend', handleTouch);
 		};
 	});
 </script>
