@@ -1,6 +1,6 @@
 # Luciafesten2025
 
-Detta är webbsidan som användes för att PR-a Luciafesten 2025: Luciafesten IN SPACE. Den är skriven av Avogadro mestadels i knacking SvelteKit och stilad genom tailwind-klasser, absolut inte något superelegant projekt men rimligt för en PR-sida som bara kommer användas en gång. Om den mot förmodan ska utvecklas på igen kan du följa instruktionerna nedan för att komma igång.
+Detta är webbsidan som användes för att PR-a Luciafesten 2025: Luciafesten IN SPACE. Den är skriven av Avogadro mestadels i knackig SvelteKit och stilad genom tailwind-klasser, absolut inte något superelegant projekt men rimligt för en PR-sida som bara kommer användas en gång. Om den mot förmodan ska utvecklas på igen kan du följa instruktionerna nedan för att komma igång.
 
 ## Kom igång
 
