@@ -19,7 +19,7 @@
 <svelte:head>
 	<link rel="icon" href={favicon} />
 	{#each cursorTypes as type}
-		<link rel="preload" href="cursor_{type}.gif" />
+		<link rel="preload" href="cursor_{type}.gif" as="image" media="(pointer:fine)" />
 	{/each}
 </svelte:head>
 
