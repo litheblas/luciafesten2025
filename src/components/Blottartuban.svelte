@@ -29,7 +29,7 @@
 	class="fixed right-0 bottom-0 hidden w-72 translate-1/2 cursor-pointer text-black lg:block"
 >
 	<img
-		class="block -rotate-45 transition {talking && '-translate-1/5'}"
+		class="block -rotate-45 transition {talking ? '-translate-1/5' : 'hover:-translate-4'}"
 		src="blottartuban.svg"
 		alt=""
 	/>
