@@ -9,7 +9,6 @@
 		<img src="gran.webp" class="-mt-[4vw] w-full pb-20 sm:w-3/4 sm:pb-[8vw]" alt="" />
 	</div>
 	<p class="mx-auto max-w-xl text-center font-display text-2xl">
-		Är tänd och lyser som stjärnhimlen själv, som kaka på kaka kommer luciatåg och lorem ipsum dolor
-		sit amet
+		Är tänd och lyser starkare än självaste stjärnhimlen. <span class="text-pink-300">Rosa?</span> <span class="text-3xl">JA TACK!</span> På Luciafesten får du se norra Europas rosaste inomhusgran! Dans runt granen blir det självklart!
 	</p>
 </div>
