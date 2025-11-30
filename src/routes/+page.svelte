@@ -73,14 +73,14 @@
 
 <ImageAndText src="kladkod.jpg" alt="">
 	<h2 class="mb-2 font-display text-3xl font-semibold">Klädkod? Ja tack!</h2>
-	<p class="text-lg">Lämna Ovven hemma, på Luciafesten är det fint eller finurligt som gäller.</p>
+	<p class="text-lg">Luciafesten är ingen kravall, så lämna Ovven hemma och rota i garderoben istället! På Luciafesten ska vi ut i galaxen och upptäcka julstjärnorna på nära håll, så kom i något rymdigt eller rosa.</p>
 </ImageAndText>
 
 <Divider class="max-w-6xl" />
 
 <ImageAndText dir="rtl" src="luciatag.jpg" alt="">
-	<h2 class="mb-2 font-display text-3xl font-semibold">Men blir det något tåg på Lucia?</h2>
-	<p class="text-lg">Självklart! <LiTHeBlas /> fixar universums prydligaste tåg.</p>
+	<h2 class="mb-2 font-display text-3xl font-semibold">Vad vore en orkester utan dess ballett? Vad vore Lucia utan hennes tåg? 🚂</h2>
+	<p class="text-lg">På Luciafesten får du uppleva ett sjudundrades Luciatåg utan dess like. Ingenstans i det kända universum hittar du ett tåg som detta!</p>
 </ImageAndText>
 
 <img
