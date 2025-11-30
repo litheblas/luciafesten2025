@@ -143,7 +143,7 @@
 
 				ctx.translate(it.x, it.y);
 				ctx.rotate(it.angle);
-				ctx.globalAlpha = Math.min(1, -10 * it.timeToLive * Math.abs(Date.now() - it.timeCreated - it.timeToLive/2) + 10 * it.timeToLive / 2);
+				ctx.globalAlpha = Math.min(1, -10 * Math.abs(Date.now() - it.timeCreated - it.timeToLive/2) + 10 * it.timeToLive / 2);
 				ctx.drawImage(
 					it.image,
 					0,
@@ -155,7 +155,7 @@
 					it.size,
 					it.size
 				);
-				if (ctx.globalAlpha <= 0) {
+				if (ctx.globalAlpha < 0) {
 					items.splice(i, 1);
 				}
 				ctx.globalAlpha = 1;
