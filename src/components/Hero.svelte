@@ -44,6 +44,8 @@
 		angle: number;
 		angleSpd: number;
 		maxAngleSpd: number;
+		timeCreated: number;
+		timeToLive: number;
 	};
 
 	let imageParent: HTMLDivElement | undefined = undefined;
@@ -74,9 +76,6 @@
 
 	function handleCreateItem() {
 		if (canvas == null || imageParent == null) return;
-		if (items.length > 5) {
-			items.pop();
-		}
 
 		const src = ITEMS[Math.floor(Math.random() * ITEMS.length)];
 		const it: FloatingItem = {
@@ -89,7 +88,9 @@
 			maxAngleSpd: Math.PI - Math.random() * 2 * Math.PI,
 			spd: 0,
 			angleSpd: 0,
-			size: 80 + Math.random() * 100
+			size: 80 + Math.random() * 100,
+			timeCreated: Date.now(),
+			timeToLive: 10000 + Math.random() * 5000,
 		};
 		it.spd = it.maxSpd;
 		it.angleSpd = it.maxAngleSpd;
@@ -117,7 +118,7 @@
 
 		if (canvas != null && ctx != null) {
 			ctx.clearRect(0, 0, canvas.width, canvas.height);
-			for (let i = 0; i < items.length; i++) {
+			for (let i = items.length-1; i >= 0; i--) {
 				const it = items[i];
 				it.x += Math.cos(it.dir) * it.spd * dt;
 				it.y += Math.sin(it.dir) * it.spd * dt;
@@ -142,6 +143,7 @@
 
 				ctx.translate(it.x, it.y);
 				ctx.rotate(it.angle);
+				ctx.globalAlpha = Math.min(1, -10 * it.timeToLive * Math.abs(Date.now() - it.timeCreated - it.timeToLive/2) + 10 * it.timeToLive / 2);
 				ctx.drawImage(
 					it.image,
 					0,
@@ -153,6 +155,10 @@
 					it.size,
 					it.size
 				);
+				if (ctx.globalAlpha <= 0) {
+					items.splice(i, 1);
+				}
+				ctx.globalAlpha = 1;
 				ctx.resetTransform();
 			}
 		}
