@@ -7,7 +7,7 @@ const config = {
 
 	kit: {
 		paths: {
-			base: '/luciafesten2025'
+			// base: '/luciafesten2025'
 		},
 		adapter: adapter({
 			pages: './_site',
