@@ -29,6 +29,28 @@
 	</Button>
 {/snippet}
 
+{#snippet kladkodButtons()}
+	<Button
+		href="https://fb.me/e/3KcG9aF2U"
+		target="_blank"
+		class="pointer-events-auto w-full sm:w-max"
+		icon="bxl:facebook"
+	>
+		Dela på Facebook
+	</Button>
+{/snippet}
+
+{#snippet luciatagButtons()}
+	<Button
+		href="https://go.orbiapp.io/BE2nvOg6mYb"
+		target="_blank"
+		class="pointer-events-auto w-full sm:w-max"
+		icon="bxs:rocket"
+	>
+		Biljetter
+	</Button>
+{/snippet}
+
 <Hero buttons={heroButtons} />
 <CenterText>
 	<p>
@@ -71,16 +93,25 @@
 	src="rocketman.webm"
 />
 
-<ImageAndText src="kladkod.jpg" alt="">
+<ImageAndText src="kladkod.jpg" alt="" buttons={kladkodButtons}>
 	<h2 class="mb-2 font-display text-3xl font-semibold">Klädkod? Ja tack!</h2>
-	<p class="text-lg">Luciafesten är ingen kravall, så lämna Ovven hemma och rota i garderoben istället! På Luciafesten ska vi ut i galaxen och upptäcka julstjärnorna på nära håll, så kom i något rymdigt eller rosa.</p>
+	<p class="text-lg">
+		Luciafesten är ingen kravall, så lämna Ovven hemma och rota i garderoben istället! På
+		Luciafesten ska vi ut i galaxen och upptäcka julstjärnorna på nära håll, så kom i något rymdigt
+		eller rosa.
+	</p>
 </ImageAndText>
 
 <Divider class="max-w-6xl" />
 
-<ImageAndText dir="rtl" src="luciatag.jpg" alt="">
-	<h2 class="mb-2 font-display text-3xl font-semibold">Vad vore en orkester utan dess ballett? Vad vore Lucia utan hennes tåg? 🚂</h2>
-	<p class="text-lg">På Luciafesten får du uppleva ett sjudundrades Luciatåg utan dess like. Ingenstans i det kända universum hittar du ett tåg som detta!</p>
+<ImageAndText dir="rtl" src="luciatag.jpg" alt="" buttons={luciatagButtons}>
+	<h2 class="mb-2 font-display text-3xl font-semibold">
+		Vad vore en orkester utan dess ballett? Vad vore Lucia utan hennes tåg? 🚂
+	</h2>
+	<p class="text-lg">
+		På Luciafesten får du uppleva ett sjudundrades Luciatåg utan dess like. Ingenstans i det kända
+		universum hittar du ett tåg som detta!
+	</p>
 </ImageAndText>
 
 <img
