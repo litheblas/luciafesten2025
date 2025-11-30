@@ -264,6 +264,6 @@
 		</h1>
 	</div>
 	<div
-		class="absolute bottom-0 h-[calc(20vh)] w-full bg-linear-180 from-slate-950/0 to-slate-950"
+		class="absolute bottom-0 h-[calc(20vh)] w-full bg-linear-180 from-slate-950/0 to-slate-950 pointer-events-none"
 	></div>
 </div>
