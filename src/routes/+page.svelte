@@ -55,7 +55,7 @@
 <CenterText>
 	<p>
 		I rymden kan ingen höra dig spela… En lite annorlunda fest är tillbaka i jul igen,
-		<LiTHeBlas /> fyller Kårallen med liveband, karaoke och Kul Små Grejer™!
+		<LiTHeBlas /> fyller Kårallen med liveband, karaoke och Kul Små Grejer!
 	</p>
 </CenterText>
 
@@ -64,20 +64,20 @@
 <Cards
 	cards={[
 		{
-			title: 'Ett hus fyllt med musik',
-			description:
-				'Vi har fyllt Kårallen till bristningsgränsen med goda vibrationer, inte mindre än TRE band spelar under kvällen!',
+			title: 'Livemusik av- och med LiU-studenter!',
+			description: 'På scen har vi D-band, LiTHe Blås, Synkopter och en hemlig överraskning...',
 			image: 'band.jpg'
 		},
 		{
-			title: 'Livekaraoke',
-			description: 'Luciafestens husband Harakiri uppträder med dig i rampljuset.',
-			image: 'harakiri-2.jpg'
+			title: 'Karaoke med livebandet Harakiri!',
+			description:
+				'Sjung (eller skråla) med till dina favoriter bland schlagerdängor, dansgolvshits och, såklart, julklassikerna!',
+			image: 'harakiri-3.jpg'
 		},
 		{
-			title: 'Kul Små Grejer™',
+			title: 'Knasiga tema-barer och Kul Små Grejer!',
 			description:
-				'På hemliga platser i Kårallens dunkel hittar du roliga upplevelser som vårt manickdepartement Kul Små Grejer™ knopat ihop.',
+				'Vi kommer ha inte mindre än tre barer, varav en är på 3e våningen, dessutom är festen strösslad med andra överraskningar och roliga påhitt. ',
 			image: 'ksg.jpg'
 		}
 	]}
@@ -94,11 +94,10 @@
 />
 
 <ImageAndText src="kladkod.jpg" alt="" buttons={kladkodButtons}>
-	<h2 class="mb-2 font-display text-3xl font-semibold">Klädkod? Ja tack!</h2>
+	<h2 class="mb-2 font-display text-3xl font-semibold">Klädkod: Rymdig eller rosa!</h2>
 	<p class="text-lg">
-		Luciafesten är ingen kravall, så lämna Ovven hemma och rota i garderoben istället! På
-		Luciafesten ska vi ut i galaxen och upptäcka julstjärnorna på nära håll, så kom i något rymdigt
-		eller rosa.
+		Lämna Ovven hemma—på Luciafesten ska vi ut i galaxen och upptäcka julstjärnorna på nära håll.
+		Kom i dina rymdigaste och/eller rosaste kläder!
 	</p>
 </ImageAndText>
 
@@ -106,7 +105,7 @@
 
 <ImageAndText dir="rtl" src="luciatag.jpg" alt="" buttons={luciatagButtons}>
 	<h2 class="mb-2 font-display text-3xl font-semibold">
-		Vad vore en orkester utan dess ballett? Vad vore Lucia utan hennes tåg? 🚂
+		Vad vore en orkester utan dess balett? Vad vore Lucia utan hennes tåg? 🚂
 	</h2>
 	<p class="text-lg">
 		På Luciafesten får du uppleva ett sjudundrades Luciatåg utan dess like. Ingenstans i det kända
