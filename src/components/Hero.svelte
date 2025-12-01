@@ -271,7 +271,7 @@
 		</h1>
 	</div>
 	<div
-		class="pointer-events-none absolute bottom-0 h-[calc(20vh)] w-full bg-linear-180 from-slate-950/0 to-slate-950"
+		class="pointer-events-none absolute bottom-0 h-[calc(20vh)] w-full bg-linear-180 from-rouge-800/0 to-rouge-800"
 	></div>
 </div>
 
