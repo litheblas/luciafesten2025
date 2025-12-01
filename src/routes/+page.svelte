@@ -15,7 +15,7 @@
 		target="_blank"
 		class="pointer-events-auto w-full sm:w-max"
 		icon="bxl:facebook"
-		height={20}
+		type="primary"
 	>
 		Dela på Facebook
 	</Button>
@@ -25,7 +25,7 @@
 		target="_blank"
 		class="pointer-events-auto w-full sm:w-max"
 		icon="bxs:rocket"
-		height={20}
+		type="primary"
 	>
 		Biljetter
 	</Button>

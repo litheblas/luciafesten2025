@@ -19,25 +19,16 @@
 	--font-logo: 'Canterbury', 'serif';
 	--font-cursive: 'Satisfy', 'serif';
 
-	--primary-color: rgb(255, 238, 176);
-	--seccondary-color: rgb(119, 28, 48);
-	--tetriary-color: rgb(212, 93, 95);
+	--color-gold-100: oklch(0.9482 0.0809 94.6);
+	--color-wine-400: oklch(0.5 0.1342 12.85);
+	--color-wine-500: oklch(0.4 0.1247 12.85);
+	--color-wine-600: oklch(0.3 0.1247 12.85);
+	--color-wine-700: oklch(0.278 0.1247 12.85);
+	--color-wine-800: oklch(0.2257 0.0789 12.85);
 }
 
 body {
 	min-height: 100vh;
 	background-color: var(--color-slate-950);
 	color: var(--color-slate-50);
-}
-
-.bg-gradient {
-	background-image: linear-gradient(to bottom,  var(--tetriary-color), var(--primary-color));
-}
-
-.text-seccondary {
-	color: var(--seccondary-color);
-}
-
-.brighten-on-hover:hover {
-	filter: brightness(1.2);
 }

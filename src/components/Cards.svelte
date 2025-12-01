@@ -20,7 +20,9 @@
 					<h3 class="font-display text-lg font-medium">{card.title}</h3>
 					<p class="opacity-60">{card.description}</p>
 				</div>
-				<div class="rounded-lg bg-gradient bg-linear-60 p-4 shadow-[0_16px_0px] text-seccondary">
+				<div
+					class="rounded-lg bg-linear-to-b from-gold-100 from-[-30%] to-wine-400 p-4 shadow-[0_16px_0px] shadow-wine-500"
+				>
 					<img class="aspect-9/10 h-full w-full rounded object-cover" src={card.image} alt="" />
 				</div>
 			</div>
