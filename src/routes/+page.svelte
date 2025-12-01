@@ -17,7 +17,7 @@
 		icon="bxl:facebook"
 		type="primary"
 	>
-		Dela på Facebook
+		Facebook-event
 	</Button>
 
 	<Button
