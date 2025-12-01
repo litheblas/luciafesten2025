@@ -22,7 +22,7 @@
 		primary:
 			'hover:text-orange-800 bg-orange-400 text-orange-900 shadow-amber-800 hover:bg-orange-300',
 		secondary:
-			'bg-slate-700 text-slate-300 shadow-slate-800 hover:bg-slate-600 hover:text-slate-200'
+			'bg-gradient text-seccondary brighten-on-hover' // Fanns inte några färger som matchar vårt tema i tailwind
 	} as const;
 </script>
 
