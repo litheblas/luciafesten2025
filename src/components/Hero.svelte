@@ -263,7 +263,7 @@
 			<img style="width: 70vw; max-width: 1000px;" src="titel.webp" alt="LUCIAFESTEN - IN SPACE" />
 			<div class="mt-10 md:-mt-16 flex items-center justify-center">
 				<div
-					class="pointer-events-auto flex w-full flex-col justify-center gap-3 sm:w-max sm:flex-row"
+					class="pointer-events-auto flex w-full flex-col justify-center gap-5 sm:gap-3 max-w-[240px] sm:max-w-none sm:flex-row"
 				>
 					{@render buttons?.()}
 				</div>
