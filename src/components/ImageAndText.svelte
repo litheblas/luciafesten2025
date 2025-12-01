@@ -21,7 +21,7 @@
 	<img
 		{src}
 		{alt}
-		class="aspect-5/4 w-full rounded-lg bg-slate-700 bg-linear-60 object-cover p-4 shadow-[0_16px_0px] shadow-slate-800 md:aspect-square md:max-w-xs lg:aspect-5/4 lg:max-w-sm"
+		class="aspect-5/4 w-full rounded-lg bg-linear-to-b from-gold-100 from-[-70%] to-wine-400 object-cover p-4 shadow-[0_16px_0px] shadow-wine-600 md:aspect-square md:max-w-xs lg:aspect-5/4 lg:max-w-sm"
 	/>
 	<div class="flex flex-1 flex-col gap-3 p-4 md:gap-6">
 		<div>

@@ -18,10 +18,19 @@
 	--font-comic: 'Gloria Hallelujah', 'Comic Sans MS', 'sans-serif';
 	--font-logo: 'Canterbury', 'serif';
 	--font-cursive: 'Satisfy', 'serif';
+
+	--color-gold-100: oklch(0.9482 0.0809 94.6);
+	--color-wine-400: oklch(0.5 0.1342 12.85);
+	--color-wine-500: oklch(0.4 0.1247 12.85);
+	--color-wine-600: oklch(0.3 0.1247 12.85);
+	--color-wine-700: oklch(0.278 0.1247 12.85);
+	--color-wine-800: oklch(0.2257 0.0789 12.85);
+
+	--color-rouge-800: oklch(0.2953 0.0481 0);
 }
 
 body {
 	min-height: 100vh;
-	background-color: var(--color-slate-950);
+	background-color: var(--color-rouge-800);
 	color: var(--color-slate-50);
 }

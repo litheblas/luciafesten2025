@@ -141,7 +141,7 @@
 					it.y = Math.max(it.size / 2, Math.min(canvas.height - it.size / 2, it.y));
 				}
 
-				ctx.translate(it.x, it.y);
+				ctx.translate(Math.floor(it.x), Math.floor(it.y));
 				ctx.rotate(it.angle);
 				let alpha =
 					(-1 / 1000) * Math.abs(Date.now() - it.timeCreated - it.timeToLive / 2) +
@@ -255,17 +255,13 @@
 		bind:this={canvas}
 	></canvas>
 	<div
-		class="pointer-events-none absolute top-[50vh] left-1/2 z-0 -translate-1/2 text-center font-display drop-shadow-2xl"
+		class="pointer-events-none absolute top-[50vh] left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 text-center font-display drop-shadow-2xl"
 	>
 		<h1 class="text-[calc(1rem+8vw)]/[1]">
-			<p class="relative text-[1em] font-semibold text-orange-400">
-				{@render layeredText('LUCIAFESTEN', 20)}
-			</p>
-			<p class="relative text-[0.9em] font-medium text-amber-600 lg:text-[0.7em]">
-				{@render layeredText('IN SPACE', 20)}
-			</p>
+			<p class="hidden">LUCIAFESTEN IN SPACE</p>
 
-			<div class="mt-20 flex items-center justify-center">
+			<img style="width: 70vw; max-width: 1000px;" src="titel.webp" alt="LUCIAFESTEN - IN SPACE" />
+			<div class="mt-10 md:-mt-16 flex items-center justify-center">
 				<div
 					class="pointer-events-auto flex w-full flex-col justify-center gap-3 sm:w-max sm:flex-row"
 				>
@@ -275,6 +271,15 @@
 		</h1>
 	</div>
 	<div
-		class="pointer-events-none absolute bottom-0 h-[calc(20vh)] w-full bg-linear-180 from-slate-950/0 to-slate-950"
+		class="pointer-events-none absolute bottom-0 h-[calc(20vh)] w-full bg-linear-180 from-rouge-800/0 to-rouge-800"
 	></div>
 </div>
+
+<style>
+	canvas {
+		image-rendering: -moz-crisp-edges;
+		image-rendering: -webkit-crisp-edges;
+		image-rendering: pixelated;
+		image-rendering: crisp-edges;
+	}
+</style>

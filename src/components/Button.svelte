@@ -14,21 +14,20 @@
 
 	const buttonClass = `
 	    flex justify-center items-center gap-1.5 rounded p-3 font-display text-sm font-semibold tracking-wider uppercase
-		shadow-[0_8px_0] transition hover:-translate-y-1 hover:shadow-[0_12px_0] active:translate-y-1
-		active:shadow-[0_4px_0] lg:text-base
+		transition hover:-translate-y-1 active:translate-y-1 lg:text-base
 	`;
 
 	const typeClasses = {
 		primary:
-			'hover:text-orange-800 bg-orange-400 text-orange-900 shadow-amber-800 hover:bg-orange-300',
+			'shadow-[0_20px_0] hover:shadow-[0_24px_0] active:shadow-[0_16px_0] bg-linear-to-b from-gold-100 to-wine-400 brightness-110 text-wine-800 shadow-wine-500 hover:brightness-125',
 		secondary:
-			'bg-slate-700 text-slate-300 shadow-slate-800 hover:bg-slate-600 hover:text-slate-200'
+			'shadow-[0_8px_0] hover:shadow-[0_12px_0] active:shadow-[0_4px_0] bg-linear-to-b from-gold-100 from-[-150%] brightness-110 to-wine-400 text-wine-800 shadow-wine-600 hover:brightness-125'
 	} as const;
 </script>
 
 {#snippet buttonContent()}
 	{#if icon}
-		<iconify-icon class="w-5 lg:w-6" {icon}></iconify-icon>
+		<iconify-icon class="bg-linear-to w-5 lg:w-6" {icon}></iconify-icon>
 	{/if}
 	{@render children?.()}
 {/snippet}
