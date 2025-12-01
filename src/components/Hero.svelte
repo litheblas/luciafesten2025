@@ -258,13 +258,11 @@
 		class="pointer-events-none absolute top-[50vh] left-1/2 z-0 -translate-1/2 text-center font-display drop-shadow-2xl"
 	>
 		<h1 class="text-[calc(1rem+8vw)]/[1]">
-			<p class="relative text-[1em] font-semibold text-orange-400">
-				{@render layeredText('LUCIAFESTEN', 20)}
-			</p>
-			<p class="relative text-[0.9em] font-medium text-amber-600 lg:text-[0.7em]">
-				{@render layeredText('IN SPACE', 20)}
+			<p class="hidden">
+				LUCIAFESTEN IN SPACE
 			</p>
 
+			<img src="titel.webp" alt="LUCIAFESTEN - IN SPACE"/>
 			<div class="mt-20 flex items-center justify-center">
 				<div
 					class="pointer-events-auto flex w-full flex-col justify-center gap-3 sm:w-max sm:flex-row"
