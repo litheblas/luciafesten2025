@@ -141,7 +141,7 @@
 					it.y = Math.max(it.size / 2, Math.min(canvas.height - it.size / 2, it.y));
 				}
 
-				ctx.translate(it.x, it.y);
+				ctx.translate(Math.floor(it.x), Math.floor(it.y));
 				ctx.rotate(it.angle);
 				let alpha =
 					(-1 / 1000) * Math.abs(Date.now() - it.timeCreated - it.timeToLive / 2) +
@@ -274,3 +274,12 @@
 		class="pointer-events-none absolute bottom-0 h-[calc(20vh)] w-full bg-linear-180 from-slate-950/0 to-slate-950"
 	></div>
 </div>
+
+<style>
+	canvas {
+		image-rendering: -moz-crisp-edges;
+		image-rendering: -webkit-crisp-edges;
+		image-rendering: pixelated;
+		image-rendering: crisp-edges;
+	}
+</style>
