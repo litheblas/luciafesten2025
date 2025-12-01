@@ -255,15 +255,13 @@
 		bind:this={canvas}
 	></canvas>
 	<div
-		class="pointer-events-none absolute top-[45vh] left-1/2 z-0 -translate-1/2 text-center font-display drop-shadow-2xl"
+		class="pointer-events-none absolute top-[50vh] left-1/2 z-0 -translate-x-1/2 -translate-y-1/2 text-center font-display drop-shadow-2xl"
 	>
 		<h1 class="text-[calc(1rem+8vw)]/[1]">
-			<p class="hidden">
-				LUCIAFESTEN IN SPACE
-			</p>
+			<p class="hidden">LUCIAFESTEN IN SPACE</p>
 
-			<img style="width: 70vw; max-width: 1000px;" src="titel.webp" alt="LUCIAFESTEN - IN SPACE"/>
-			<div class="mt-15 flex items-center justify-center">
+			<img style="width: 70vw; max-width: 1000px;" src="titel.webp" alt="LUCIAFESTEN - IN SPACE" />
+			<div class="-mt-16 flex items-center justify-center">
 				<div
 					class="pointer-events-auto flex w-full flex-col justify-center gap-3 sm:w-max sm:flex-row"
 				>
