@@ -8,7 +8,7 @@
 		'Jag dricker bara när jag är full.',
 		'KUKEN! ÖJ!',
 		'|: supa och dö :|',
-		'Vilken bokstav är P?"',
+		'Vilken bokstav är P?',
 		'Det är utsidan som räknas.',
 		'De säger att det är så farligt med alkohol, det är bättre med kokain.',
 		'Visste du att solskyddskräm inte hjälper om du skulle ställa dig på solens yta?',
@@ -23,7 +23,7 @@
 		talking = true;
 		for (let i = 0; i < text.length; i++) {
 			message = text.slice(0, i + 1);
-			await wait(3000 / text.length);
+			await wait(Math.min(100, 3000 / text.length));
 		}
 		await wait(1000);
 		talking = false;
