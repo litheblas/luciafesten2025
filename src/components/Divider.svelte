@@ -6,6 +6,6 @@
 	const { class: clazz = '' }: DividerProps = $props();
 </script>
 
-<div class="container mx-auto h-0.5 px-12 sm:px-6 {clazz}">
+<div class="container mx-auto h-0.5 px-8 sm:px-6 mt-4 {clazz}">
 	<hr class="h-full w-full border-none bg-gold-100" />
 </div>

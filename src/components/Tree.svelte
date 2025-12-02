@@ -1,4 +1,4 @@
-<div class="container mx-auto py-32">
+<div class="container mx-auto py-32 px-8">
 	<div class="relative flex flex-col items-center">
 		<h1
 			class="sticky top-[calc(50vh-1em)] text-center font-display text-[clamp(4rem,6vw,20rem)] font-semibold drop-shadow-2xl"

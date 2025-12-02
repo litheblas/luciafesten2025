@@ -14,7 +14,7 @@
 
 <div
 	class="
-        container mx-auto flex items-center gap-x-9 gap-y-3 px-12 sm:px-6 py-12 md:max-w-6xl
+        container mx-auto flex items-center gap-x-9 gap-y-3 px-12 sm:px-6 py-8 md:max-w-6xl
         {dir === 'ltr' ? 'flex-col-reverse md:flex-row' : 'flex-col-reverse md:flex-row-reverse'}
     "
 >
@@ -23,7 +23,7 @@
 		{alt}
 		class="aspect-5/4 w-full rounded-lg bg-linear-to-b from-gold-100 from-[-70%] to-wine-400 object-cover p-4 shadow-[0_16px_0px] shadow-wine-600 md:aspect-square md:max-w-xs lg:aspect-5/4 lg:max-w-sm"
 	/>
-	<div class="flex flex-1 flex-col gap-3 p-4 md:gap-6">
+	<div class="flex flex-1 flex-col gap-3 p-0 sm:p-4 py-8 sm:py-0 md:gap-6">
 		<div>
 			{@render children?.()}
 		</div>
