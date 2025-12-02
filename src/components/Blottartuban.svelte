@@ -4,7 +4,16 @@
 
 	const messages = [
 		'Att se en spelning med LiTHe Blås är som att få en käftsmäll',
-		'Vissste duatt LiTHe Blås speller hellre än bra?'
+		'Vissste duatt LiTHe Blås speller hellre än bra?',
+		'Jag dricker bara när jag är full.',
+		'KUKEN! ÖJ!',
+		'|: supa och dö :|',
+		'Vilken bokstav är P?"',
+		'Det är utsidan som räknas.',
+		'De säger att det är så farligt med alkohol, det är bättre med kokain.',
+		'Visste du att solskyddskräm inte hjälper om du skulle ställa dig på solens yta?',
+		'Visste du att du inte kan sticka fingret i ett svart hål och komma undan?',
+		'Visste du att du inte kan andas i rymden, inte ens med snorkel?'
 	];
 
 	let talking = $state(false);
