@@ -14,7 +14,7 @@
 
 <div
 	class="
-        container mx-auto flex items-center gap-x-9 gap-y-3 px-12 sm:px-6 py-12 md:max-w-6xl
+        container mx-auto flex items-center gap-x-9 gap-y-3 px-12 sm:px-6 py-8 md:max-w-6xl
         {dir === 'ltr' ? 'flex-col-reverse md:flex-row' : 'flex-col-reverse md:flex-row-reverse'}
     "
 >
