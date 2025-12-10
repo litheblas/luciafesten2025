@@ -13,7 +13,8 @@
 		'De säger att det är så farligt med alkohol, det är bättre med kokain.',
 		'Visste du att solskyddskräm inte hjälper om du skulle ställa dig på solens yta?',
 		'Visste du att du inte kan sticka fingret i ett svart hål och komma undan?',
-		'Visste du att du inte kan andas i rymden, inte ens med snorkel?'
+		'Visste du att du inte kan andas i rymden, inte ens med snorkel?',
+    'Årets julklapp är vuxenleksaken, men med en burk läsk kan man göra mycket!'
 	];
 
 	let talking = $state(false);

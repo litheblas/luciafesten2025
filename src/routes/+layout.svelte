@@ -3,9 +3,6 @@
 	import '../app.css';
 	import favicon256 from '$lib/assets/favicon-256.png';
 	import favicon128 from '$lib/assets/favicon-128.png';
-	import Navbar from '../components/Navbar.svelte';
-	import Footer from '../components/Footer.svelte';
-	import Blottartuban from '../components/Blottartuban.svelte';
 	import Cursor, { cursorTypes } from '../components/Cursor.svelte';
 	import { onMount } from 'svelte';
 
@@ -51,10 +48,7 @@
 	{/each}
 </svelte:head>
 
-<Navbar />
 {@render children()}
-<Footer />
-<Blottartuban />
 
 {#if showCursor}
 	<Cursor />

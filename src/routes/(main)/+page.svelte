@@ -1,12 +1,12 @@
 <script>
-	import Button from '../components/Button.svelte';
-	import Cards from '../components/Cards.svelte';
-	import CenterText from '../components/CenterText.svelte';
-	import Divider from '../components/Divider.svelte';
-	import Hero from '../components/Hero.svelte';
-	import ImageAndText from '../components/ImageAndText.svelte';
-	import LiTHeBlas from '../components/LiTHeBlas.svelte';
-	import Tree from '../components/Tree.svelte';
+	import Button from '../../components/Button.svelte';
+	import Cards from '../../components/Cards.svelte';
+	import CenterText from '../../components/CenterText.svelte';
+	import Divider from '../../components/Divider.svelte';
+	import Hero from '../../components/Hero.svelte';
+	import ImageAndText from '../../components/ImageAndText.svelte';
+	import LiTHeBlas from '../../components/LiTHeBlas.svelte';
+	import Tree from '../../components/Tree.svelte';
 </script>
 
 {#snippet heroButtons()}
@@ -80,7 +80,7 @@
 			title: 'Knasiga tema-barer och Kul Små Grejer!',
 			description:
 				'Vi kommer ha inte mindre än tre barer, varav en är på 3e våningen, dessutom är festen strösslad med andra överraskningar och roliga påhitt. ',
-			image: 'ksg.jpg'
+			image: 'bar.jpg'
 		}
 	]}
 />
